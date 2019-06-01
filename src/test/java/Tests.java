@@ -67,7 +67,8 @@ public class Tests {
 
     @Test(timeout = 1000)
     public void testEx6NumberConstr() {
-        Number n = new Number("4");
+        Number n = new Number(); //wrong argument
+        n.setNumber("4"); //set number
         Assert.assertEquals(8, n.multiply(2));
         Assert.assertEquals(24, n.factorial());
 

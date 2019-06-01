@@ -7,11 +7,13 @@ public abstract class AbstractPerson {
     protected String name;
     protected String surname;
     protected int age;
+    protected String position;
 
-    public AbstractPerson(String name, String surname, int age) {
+    public AbstractPerson(String name, String surname, int age, String position) {
         this.name = name;
         this.surname = surname;
         this.age = age;
+        this.position = position;
     }
 
     public abstract String getName();
